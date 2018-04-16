@@ -36,71 +36,29 @@ Base on **Vue2**, wrapper for **ChartJs**.
 [Jsondata](http://vue-charts.hchspersonal.tk/passjson)      
 
 # NPM Package  
-[NPM Package](https://www.npmjs.com/package/hchs-vue-charts)
+[NPM Package](https://www.npmjs.com/package/vue-chartsjs-es6)
 
 # Install
 
-	npm install hchs-vue-charts   
+	npm install vue-chartsjs-es6   
 
 or  
 
-	yarn add hchs-vue-charts  
+	yarn add vue-chartsjs-es6 
 
 
 # Notice
 - vue-charts base on Vue 2  
 - vue-charts base on Chart.js 2  
 
-# How to use --- dist & CDN
-
-1.build a page
-```html
-    <body>
-        <div id="app">
-            <chartjs-line></chartjs-line>
-        </div>
-    </body>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.js"></script>
-    <script src="js/vue-charts.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.min.js"></script>
-    <script type="text/javascript">
-		Vue.use(VueCharts);
-        const app = new Vue({
-            el: '#app',
-        });
-    </script>
-   ```   
-2.Done!   
-[dist&CDN Demo](http://vue-charts.hchspersonal.tk/demo.html)   
-![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/cdn_demo.png)
-
-# How to use --- Laravel Elixir
+# How to use
+Laravel Elixir
 
 1.Checkout your gulpfile.js in your laravel project  
 
 ```javascript
-    const elixir = require('laravel-elixir');
 
-    require('laravel-elixir-vue-2');
-
-    /*
-     |--------------------------------------------------------------------------
-     | Elixir Asset Management
-     |--------------------------------------------------------------------------
-     |
-     | Elixir provides a clean, fluent API for defining some basic Gulp tasks
-     | for your Laravel application. By default, we are compiling the Sass
-     | file for our application, as well as publishing vendor resources.
-     |
-     */
-
-    elixir(mix => {
-        mix.sass('app.scss')
-           .webpack('app.js');  // we just need to require 'hchs-vue-charts' in this file or somewhere else
-    });
-```
-2.open your app.js   
+open your app.js
 
 ```javascript
     /**
@@ -112,10 +70,9 @@ or
 	//By default the bootstrap file will require('vue');
     require('./bootstrap');
 
-	// chartjs package
-	require('chart.js');
+
     // vue-charts package
-    require('hchs-vue-charts');
+    import VueCharts from 'vue-chartsjs-es6'
     Vue.use(VueCharts);
 
 
@@ -125,21 +82,12 @@ or
      * or customize the JavaScript scaffolding to fit your unique needs.
      */
 
-    Vue.component('example', require('./components/Example.vue'));
+    Vue.component('example', Example);
 
     const app = new Vue({
         el: '#app'
     });
 ```
-3.run gulp in your laravel project   
-
-		gulp
-
-4.modify your wellcome.blade.php or where you want to show the chart
-- give vue root id
-- add line chart component
-- don't forget your script source
-
 
 ```html
 	<body>
@@ -170,5 +118,6 @@ or
 ![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/welcome_demo.PNG)     
 
 
-# Thanks  
+# Thanks
+[@hchstera](https://github.com/hchstera) - Original component  
 [@yeknava](https://github.com/yeknava) - Horizontal Bar    
