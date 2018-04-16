@@ -52,9 +52,7 @@ or
 - vue-charts base on Chart.js 2  
 
 # How to use
-Laravel Elixir
-
-1.Checkout your gulpfile.js in your laravel project  
+Laravel Mix
 
 ```javascript
 
@@ -87,6 +85,7 @@ open your app.js
     })
 ```
 
+in your view
 ```html
 	<body>
 	  <div class="flex-center position-ref full-height">
