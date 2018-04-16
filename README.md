@@ -1,4 +1,4 @@
-# vue-charts [![Package Quality](http://npm.packagequality.com/shield/hchs-vue-charts.svg)](http://packagequality.com/#?package=hchs-vue-charts)
+# vue-charts [![Package Quality](http://npm.packagequality.com/shield/vue-chartsjs-es6.svg)](http://packagequality.com/#?package=hchs-vue-charts)
 Base on **Vue2**, wrapper for **ChartJs**.    
 - [Vue js](https://vuejs.org/)  
 - [Chart js](http://www.chartjs.org/)  
@@ -66,13 +66,10 @@ open your app.js
      * include Vue and Vue Resource. This gives a great starting point for
      * building robust, powerful web applications using Vue and Laravel.
      */
-
-	//By default the bootstrap file will require('vue');
-    require('./bootstrap');
-
-
+     
     // vue-charts package
     import VueCharts from 'vue-chartsjs-es6'
+    import Example from './components/Example.vue'
     Vue.use(VueCharts);
 
 
@@ -110,11 +107,10 @@ open your app.js
 	  </div>
   	</body>
   	<!--set script src-->
-  	<script src="{{asset('js/app.js')}}"></script>
+  	<script src="{{mix('js/app.js')}}"></script>
 ```     
 
 
-5.Done
 ![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/welcome_demo.PNG)     
 
 
