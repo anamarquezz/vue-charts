@@ -1,8 +1,8 @@
-# vue-charts [![Package Quality](http://npm.packagequality.com/shield/vue-chartsjs-es6.svg)](http://packagequality.com/#?package=hchs-vue-charts)
-Base on **Vue2**, wrapper for **ChartJs**.    
+# vue-charts [![Package Quality](http://npm.packagequality.com/shield/vue-chartsjs-es6.svg)](http://packagequality.com/#?package=vue-chartsjs-es6)
+Based on **Vue2**, wrapper for **ChartJs**.    
 - [Vue js](https://vuejs.org/)  
 - [Chart js](http://www.chartjs.org/)  
-- Work well with [Laravel](https://laravel.com/)  
+- Works well with [Laravel Mix](https://github.com/JeffreyWay/laravel-mix)  
 
 
 # Render a Chart Easily  
@@ -68,9 +68,10 @@ open your app.js
      */
      
     // vue-charts package
+    import Vue from 'vue'
     import VueCharts from 'vue-chartsjs-es6'
     import Example from './components/Example.vue'
-    Vue.use(VueCharts);
+    Vue.use(VueCharts)
 
 
     /**
@@ -79,11 +80,11 @@ open your app.js
      * or customize the JavaScript scaffolding to fit your unique needs.
      */
 
-    Vue.component('example', Example);
+    Vue.component('example', Example)
 
     const app = new Vue({
         el: '#app'
-    });
+    })
 ```
 
 ```html
@@ -115,5 +116,6 @@ open your app.js
 
 
 # Thanks
-[@hchstera](https://github.com/hchstera) - Original component  
+[@hchstera](https://github.com/hchstera) - Original component, for laravel elixir
+
 [@yeknava](https://github.com/yeknava) - Horizontal Bar    
