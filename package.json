@@ -1,14 +1,14 @@
 {
-  "name": "hchs-vue-charts",
-  "version": "1.2.9",
-  "description": "Base on Vue2.0 wrapper for ChartJs.",
-  "main": "dist/vue-charts.min.js",
+  "name": "vue-chartsjs-es6",
+  "version": "1.3",
+  "description": "Vue2.0 wrapper for ChartJs. Providing better es6 compatibility",
+  "main": "src/vue-charts.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hchstera/vue-charts.git"
+    "url": "git+https://github.com/bitkill/vue-charts.git"
   },
   "dependencies":{
     "vue": "^2.5.16",
@@ -29,7 +29,7 @@
   "author": "hchstera",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hchstera/vue-charts/issues"
+    "url": "https://github.com/bitkill/vue-charts/issues"
   },
-  "homepage": "https://github.com/hchstera/vue-charts#readme"
+  "homepage": "https://github.com/bitkill/vue-charts#readme"
 }
