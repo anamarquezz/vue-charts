@@ -1,5 +1,5 @@
-# vue-charts [![Package Quality](http://npm.packagequality.com/shield/vue-chartsjs-es6.svg)](http://packagequality.com/#?package=vue-chartsjs-es6)
-Based on **Vue2**, wrapper for **ChartJs**.    
+# vue-chartsjs-es6 [![Package Quality](http://npm.packagequality.com/shield/vue-chartsjs-es6.svg)](http://packagequality.com/#?package=vue-chartsjs-es6)
+Based on **Vue.js**, wrapper for **ChartJs**.    
 - [Vue js](https://vuejs.org/)  
 - [Chart js](http://www.chartjs.org/)  
 - Works well with [Laravel Mix](https://github.com/JeffreyWay/laravel-mix)  
@@ -54,7 +54,6 @@ or
 # How to use
 Laravel Mix
 
-```javascript
 
 open your app.js
 
@@ -117,4 +116,4 @@ in your view
 # Thanks
 [@hchstera](https://github.com/hchstera) - Original component, for laravel elixir
 
-[@yeknava](https://github.com/yeknava) - Horizontal Bar    
+[@yeknava](https://github.com/yeknava) - Horizontal Bar
