@@ -1,12 +1,14 @@
 <template>
     <div>
-        <canvas v-if="!target" ref="canvas" :width="width" :height="height">
+        <canvas v-if="!target" ref="canvas" :width="width" :height="height" />
     </div>
 </template>
 <script>
+import ChartDefault from '../vue-chartjs-lib.js'
+
 export default {
     mixins: [
-        VueCharts.core.default,
+        ChartDefault,
     ],
     props: {
         pointbordercolor: {

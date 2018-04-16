@@ -1,6 +1,6 @@
 {
   "name": "hchs-vue-charts",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "description": "Base on Vue2.0 wrapper for ChartJs.",
   "main": "dist/vue-charts.min.js",
   "scripts": {
@@ -11,12 +11,12 @@
     "url": "git+https://github.com/hchstera/vue-charts.git"
   },
   "dependencies":{
-    "vue": "^2.0.1",
+    "vue": "^2.5.16",
     "chart.js" : "^2.3.0"
   },
   "devDependencies": {
-    "vue-loader": "^9.7.0",
-    "webpack": "^2.1.0-beta.25"
+    "vue-loader": "^14.2.2",
+    "webpack": "^3.8.1"
   },
   "keywords": [
     "vue",

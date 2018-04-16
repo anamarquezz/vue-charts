@@ -1,9 +1,12 @@
-if(typeof Chart === "undefined")
-    throw "ChartJS is undefined";
+//if(typeof Chart === "undefined")
+//    throw "ChartJS is undefined";
 // 4 kb here
+
+import 'chart.js' from 'chart.js';
+
 window.VueCharts = {};
 
-VueCharts.core = require('./vue-chartjs-lib.js');
+//VueCharts.core = require('./vue-chartjs-lib.js');
 
 VueCharts.install = function (Vue) {
     Vue.component('chartjs-line', require('./components/chartjs-line.vue'));
