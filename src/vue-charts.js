@@ -2,7 +2,7 @@
 //    throw "ChartJS is undefined";
 // 4 kb here
 
-import 'chart.js' from 'chart.js';
+require('chart.js');
 
 window.VueCharts = {};
 
