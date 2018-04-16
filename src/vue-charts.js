@@ -1,19 +1,21 @@
-//if(typeof Chart === "undefined")
-//    throw "ChartJS is undefined";
-// 4 kb here
+import ChartJsLine from './components/chartjs-line'
+import ChartJsBar from './components/chartjs-bar'
+import ChartJsHorizontalBar from './components/chartjs-horizontal-bar'
+import ChartJsRadar from './components/chartjs-radar'
+import ChartJsPolarArea from './components/chartjs-polar-area'
+import ChartJsPie from './components/chartjs-pie'
+import ChartJsDoughnut from './components/chartjs-doughnut'
 
-require('chart.js');
+require('chart.js')
 
-window.VueCharts = {};
-
-//VueCharts.core = require('./vue-chartjs-lib.js');
-
-VueCharts.install = function (Vue) {
-    Vue.component('chartjs-line', require('./components/chartjs-line.vue'));
-    Vue.component('chartjs-bar', require('./components/chartjs-bar.vue'));
-    Vue.component('chartjs-horizontal-bar', require('./components/chartjs-horizontal-bar.vue'));
-    Vue.component('chartjs-radar', require('./components/chartjs-radar.vue'));
-    Vue.component('chartjs-polar-area', require('./components/chartjs-polar-area.vue'));
-    Vue.component('chartjs-pie', require('./components/chartjs-pie.vue'));
-    Vue.component('chartjs-doughnut', require('./components/chartjs-doughnut.vue'));
+export default {
+  install (Vue) {
+    Vue.component('chartjs-line', ChartJsLine)
+    Vue.component('chartjs-bar', ChartJsBar)
+    Vue.component('chartjs-horizontal-bar', ChartJsHorizontalBar)
+    Vue.component('chartjs-radar', ChartJsRadar)
+    Vue.component('chartjs-polar-area', ChartJsPolarArea)
+    Vue.component('chartjs-pie', ChartJsPie)
+    Vue.component('chartjs-doughnut', ChartJsDoughnut)
+  }
 }

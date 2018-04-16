@@ -1,30 +1,30 @@
 <template>
     <div>
-        <canvas v-if="!target" ref="canvas" :width="width" :height="height" />
+        <canvas v-if="!target" ref="canvas" :width="width" :height="height"/>
     </div>
 </template>
 <script>
-import ChartDefault from '../vue-chartjs-lib.js'
+  import ChartDefault from '../vue-chartjs-lib.js'
 
-export default {
+  export default {
     mixins: [
-        ChartDefault,
+      ChartDefault,
     ],
-    data() {
-        return {
+    data () {
+      return {
+        type: 'bar',
+        chart_data: {
+          labels: this.labels,
+          datasets: [{
             type: 'bar',
-            chart_data: {
-                labels: this.labels,
-                datasets: [{
-                    type: 'bar',
-                    label: this.datalabel,
-                    backgroundColor: this.backgroundcolor,
-                    borderColor: this.bordercolor,
-                    borderWidth: 1,
-                    data: this.data,
-                }, ],
-            },
-        };
+            label: this.datalabel,
+            backgroundColor: this.backgroundcolor,
+            borderColor: this.bordercolor,
+            borderWidth: 1,
+            data: this.data,
+          },],
+        },
+      }
     },
-}
+  }
 </script>
