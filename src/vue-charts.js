@@ -1,10 +1,10 @@
-import ChartJsLine from './components/chartjs-line'
-import ChartJsBar from './components/chartjs-bar'
-import ChartJsHorizontalBar from './components/chartjs-horizontal-bar'
-import ChartJsRadar from './components/chartjs-radar'
-import ChartJsPolarArea from './components/chartjs-polar-area'
-import ChartJsPie from './components/chartjs-pie'
-import ChartJsDoughnut from './components/chartjs-doughnut'
+import ChartJsLine from './components/chartjs-line.vue'
+import ChartJsBar from './components/chartjs-bar.vue'
+import ChartJsHorizontalBar from './components/chartjs-horizontal-bar.vue'
+import ChartJsRadar from './components/chartjs-radar.vue'
+import ChartJsPolarArea from './components/chartjs-polar-area.vue'
+import ChartJsPie from './components/chartjs-pie.vue'
+import ChartJsDoughnut from './components/chartjs-doughnut.vue'
 
 require('chart.js')
 

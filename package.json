@@ -4,19 +4,25 @@
   "description": "Vue2.0 wrapper for ChartJs. Providing better es6 compatibility",
   "main": "src/vue-charts.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server",
+    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=webpack.config.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bitkill/vue-charts.git"
   },
-  "dependencies":{
+  "dependencies": {
+    "babel-loader": "^7.1.4",
+    "chart.js": "^2.7.2",
+    "http-server": "^0.11.1",
     "vue": "^2.5.16",
-    "chart.js" : "^2.3.0"
+    "vue-template-compiler": "^2.5.16"
   },
   "devDependencies": {
     "vue-loader": "^14.2.2",
-    "webpack": "^3.8.1"
+    "webpack": "^3.8.1",
+    "webpack-cli": "^2.0.14"
   },
   "keywords": [
     "vue",
