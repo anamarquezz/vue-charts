@@ -2,7 +2,7 @@
 Based on **Vue.js**, wrapper for **ChartJs**.    
 - [Vue js](https://vuejs.org/)  
 - [Chart js](http://www.chartjs.org/)  
-- Works well with [Laravel Mix](https://github.com/JeffreyWay/laravel-mix)  
+- Works well with ES6 / [Laravel Mix](https://github.com/JeffreyWay/laravel-mix)  
 
 
 # Render a Chart Easily  

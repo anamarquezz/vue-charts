@@ -156,7 +156,7 @@ export default {
       this.chart = new Chart(this.context, {
         type: this.type,
         data: this.chart_data,
-        options: this.options,
+        options: Object.assign({}, this.options),
       })
     },
     appendChart () {

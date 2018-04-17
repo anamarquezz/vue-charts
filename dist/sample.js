@@ -4836,7 +4836,7 @@ exports.default = {
       this.chart = new Chart(this.context, {
         type: this.type,
         data: this.chart_data,
-        options: this.options
+        options: Object.assign({}, this.options)
       });
     },
     appendChart: function appendChart() {
@@ -6185,10 +6185,13 @@ helpers.getValueAtIndexOrDefault = helpers.valueAtIndexOrDefault;
         }]
       },
       options: {
-        scale: {
-          reverse: true,
-          ticks: {
-            beginAtZero: this.beginzero
+        scales: {
+          scale: {
+            reverse: true,
+            ticks: {
+              beginAtZero: this.beginzero || true,
+              min: 0
+            }
           }
         }
       }

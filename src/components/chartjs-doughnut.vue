@@ -49,10 +49,13 @@
           }],
         },
         options: {
-          scale: {
-            reverse: true,
-            ticks: {
-              beginAtZero: this.beginzero
+          scales: {
+            scale: {
+              reverse: true,
+              ticks: {
+                beginAtZero: this.beginzero || true,
+                min: 0
+              }
             }
           }
         },

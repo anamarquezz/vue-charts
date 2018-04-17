@@ -1,6 +1,6 @@
 {
   "name": "vue-chartsjs-es6",
-  "version": "1.3.2",
+  "version": "1.4.0",
   "description": "Vue2.0 wrapper for ChartJs. Providing better es6 compatibility",
   "main": "src/vue-charts.js",
   "scripts": {

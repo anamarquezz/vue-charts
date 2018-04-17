@@ -5,7 +5,7 @@ function resolve (dir) {
   return path.join(__dirname, '.', dir)
 }
 
-let config = {
+let config = {     // common config
   context: path.resolve(__dirname, './'),
   resolve: {
     extensions: ['.js', '.vue', '.json'],
@@ -16,8 +16,6 @@ let config = {
     }
   },
   module: {
-    // common config
-
     loaders: [
       {
         test: /\.vue$/,
